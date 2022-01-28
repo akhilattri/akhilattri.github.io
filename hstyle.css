@@ -356,7 +356,8 @@ progress {
         font-size: 1.2rem;
     }
     .hobbiespage{
-        margin-top: 15%;
+        margin-top: 20%;
+        height: 500px;
     }
     .hobbiespage .cardcontent{
         flex-direction: column;
@@ -367,6 +368,9 @@ progress {
         justify-content: space-between;
         font-size: 1.3rem;
     }
+    .skillspage{
+        height: 550px;
+    }
     .skillspage label{
         padding-top: 2%;
         height: 70px;
@@ -374,6 +378,9 @@ progress {
     .skillspage .cardcontent{
         padding-top: 7%;
         font-size: 0.5rem;
+    }
+    .contactpage{
+        height: 400px;
     }
 
     @media screen and (max-width:380px) {
