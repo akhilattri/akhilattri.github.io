@@ -3,7 +3,7 @@ html{
 }
 body{
     background-color: #F4EEE8;
-    color:#f1f3f7;
+    color:#222333;
     font-family: 'Lato',sans-serif;
 }
 img{
@@ -134,7 +134,7 @@ img{
 }
 a{
     text-decoration: none;
-    color:#4B6587;
+    color:#444444;
 }
 a:hover{
     color: black;
@@ -259,6 +259,9 @@ progress {
     font-size: 1.4rem;
     line-height: 2.8rem;
 }
+.credits{
+    line-height: 2rem;
+}
 /* Smaller Screen Settings */
 @media only screen and (max-width:710px) {
     
@@ -306,7 +309,7 @@ progress {
         padding-bottom: 5%;
         flex-direction: column;
         width: 80%;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     .faceright{
         width: 90%;
