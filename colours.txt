@@ -1,4 +1,0 @@
-lavendar e6e6fa
-darkblueishbg 1d2d50
-accent tealblue 1E5F74
-pale blue for text c0d3ecb9
