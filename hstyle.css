@@ -23,6 +23,7 @@ img{
     margin: auto;
     align-items: center;
     border-radius: 10px;
+    position: -webkit-sticky;
     position: sticky;
     top:0;
     left: auto;
@@ -44,16 +45,42 @@ img{
     flex-direction: row;
     justify-content: space-evenly;
     align-content: center;
+    padding: auto;
+}
+.navigation .current{
+    color: black;
 }
 .navlink{
     display: flex;
-    width: 20%;
     justify-content: center;
     align-items: center;
     height: 1.5em;
+    margin: auto;
 }
-.navbar a{
+a{
+    text-decoration: none;
     color:whitesmoke;
+}
+/* hovering underline */
+.hover-underline {
+    position: relative;
+}
+.hover-underline:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:whitesmoke;
+    transform-origin: bottom right;
+    transition: transform 0.4s ease-out;
+}
+.hover-underline:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    height: 2px;
 }
 .face{
     border-radius: 10px;
@@ -126,37 +153,13 @@ img{
     background-color:#E6C4C0;
     border-radius: 10px;
     margin: 4%;
-    padding: 3%;
+    padding: 5%;
     font-size: 110%;
     color: black;
-    height: 85%;
+    height: 525px;
     opacity: 1;
 }
-a{
-    text-decoration: none;
-    color:#444444;
-}
-a:hover{
-    color: black;
-    background-color: #E6C4C0;
-    border-radius: 5px;
-    transition: ease-in;
-}
-a:active{
-    height: 1.4rem;
-}
-.navigation .current{
-    background-color: #E6C4C0;
-    color: black;
-    border-radius: 5px;
-}
-.hobbiespage{
-    padding: 5%;
-    margin-top: 8%;
-}
-.hobbiespage {
-    height: 75%;
-}
+
 .hobbiespage .cardcontent{
     display: flex;
     height: 60%;
@@ -178,13 +181,13 @@ a:active{
     align-items:center;
     justify-items:center;
 }
-.skillspage{
+.hobbiespage .hobbyitem a{
     padding: 5%;
+    color: black;
 }
 .skillspage .cardcontent{
     display: flex;
     flex-direction: column;
-    padding-top: 1%;
     justify-items: center;
     align-items: center;
     justify-content: flex-start;
@@ -247,20 +250,20 @@ progress {
     justify-content: center;
     align-items: center;
 }
-.contactpage{
-    padding: 5%;
-    height: 60%;
-}
+
 .contactpage hr{
     margin-top: 4%;
 }
 .contactpage .cardcontent{
-    padding-top: 6%;
+    padding-top: 10%;
     font-size: 1.4rem;
     line-height: 2.8rem;
 }
 .credits{
     line-height: 2rem;
+}
+.credits a{
+    color: black;
 }
 /* Smaller Screen Settings */
 @media only screen and (max-width:710px) {
